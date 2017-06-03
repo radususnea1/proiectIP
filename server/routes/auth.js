@@ -1,6 +1,5 @@
-// import { express } from 'express';
 import { validator } from 'validator';
-import { passport } from 'passport';
+import  passport  from 'passport';
 import { validateLoginForm } from '../validators/validateLoginForm';
 import { validateSignUpForm } from '../validators/validateSignUpFrom';
 

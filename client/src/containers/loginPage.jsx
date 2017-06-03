@@ -45,6 +45,7 @@ class LoginPage extends React.Component {
 
         this.context.router.replace('/');
       } else {
+        console.log("asd");
         const errors = xhr.response.errors ? xhr.response.errors : {};
         errors.summary = xhr.response.message;
 
