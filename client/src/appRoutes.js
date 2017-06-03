@@ -6,7 +6,7 @@ import LoginPage from './containers/loginPage.jsx';
 import SignUpPage from './containers/signUpPage.jsx';
 import Auth from './modules/auth';
 
-import { BrowserRouter as Router, Link, Match, Miss } from 'react-router';
+/*import { BrowserRouter as Router, Link, Match, Miss } from 'react-router';
 
 const routes = () => {
   return (
@@ -21,42 +21,43 @@ const routes = () => {
   );
 };
 
+export default routes;*/
+
+
+const routes =  {
+  component: Base,
+  childRoutes: [
+    {
+      path: '/',
+      getComponent: (location, callback) => {
+        if (Auth.isUserAuthenticated()) {
+          callback(null, DashboardPage);
+        } else {
+          callback(null, HomePage);
+        }
+      }
+    },
+    {
+      path: '/login',
+      component: LoginPage
+    },
+
+    {
+      path: '/signup',
+      component: SignUpPage
+    },
+
+    {
+      path: '/logout',
+      onEnter: (nextState, replace) => {
+        Auth.deauthenticateUser();
+
+        // change the current URL to /
+        replace('/');
+      }
+    }
+
+  ]
+};
+
 export default routes;
-
-// export default routes;
-
-// const routes =  {
-//   component: Base,
-//   childRoutes: [
-//     {
-//       path: '/',
-//       getComponent: (location, callback) => {
-//         if (Auth.isUserAuthenticated()) {
-//           callback(null, DashboardPage);
-//         } else {
-//           callback(null, HomePage);
-//         }
-//       }
-//     },
-//     {
-//       path: '/login',
-//       component: LoginPage
-//     },
-
-//     {
-//       path: '/signup',
-//       component: SignUpPage
-//     },
-
-//     {
-//       path: '/logout',
-//       onEnter: (nextState, replace) => {
-//         Auth.deauthenticateUser();
-
-//         // change the current URL to /
-//         replace('/');
-//       }
-//     }
-
-//   ]
-// };
