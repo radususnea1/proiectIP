@@ -1,3 +1,4 @@
+import validator from 'validator';
 /**
  * Validate the sign up form
  *
