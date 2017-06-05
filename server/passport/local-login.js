@@ -1,5 +1,5 @@
 import jsonwebtoken from 'jsonwebtoken';
-import User from 'mongoose';
+import User from '../models/user';
 import PassportLocalStrategy from 'passport-local';
 import config from '../config/index.json';
 
@@ -15,6 +15,7 @@ module.exports = new PassportLocalStrategy({
   };
 
   return User.findOne({ email: userData.email }, (err, user) => {
+    console.log("entered find one" + JSON.stringify(User));
     if (err) { return done(err); }
 
     if (!user) {
@@ -22,9 +23,9 @@ module.exports = new PassportLocalStrategy({
       error.name = 'IncorrectCredentialsError';
 
       return done(error);
-    }
-
-    return user.comparePassword(userData.password, (passwordErr, isMatch) => {
+    } else {
+      return user.comparePassword(userData.password, (passwordErr, isMatch) => {
+      console.log("entered compare passoword");
       if (err) { return done(err); }
 
       if (!isMatch) {
@@ -44,6 +45,8 @@ module.exports = new PassportLocalStrategy({
       };
 
       return done(null, token, data);
-    });
+      });
+    }
+
   });
 });

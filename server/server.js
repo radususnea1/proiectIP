@@ -13,9 +13,9 @@ var bodyParser = require('body-parser')
 
 var app = express();
 
-// var db = connect();
+var db = connect();
 
-var db = 1;
+//var db = 1;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -41,7 +41,7 @@ app.get('/', function (rez, res) {
   request(options, function (error, response, body) {
     //request well done aici ai ce intoarce apiu facultatii
     console.log(body)
-    console.log('Autentificare in auth!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    console.log('Autentificare in auth!!')
     res.send(body);
   });
 })
