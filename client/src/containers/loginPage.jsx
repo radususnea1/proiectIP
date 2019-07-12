@@ -6,7 +6,133 @@ import LoginForm from '../components/loginForm.jsx';
 class LoginPage extends React.Component {
   constructor(props, context) {
     super(props, context);
-    const storedMessage = localStorage.getItem('successMessage');
+    const storedMessage = locaimport React, { PropTypes } from 'react';
+    import SignUpForm from '../components/signUpForm.jsx';
+
+
+    class SignUpPage extends React.Component {
+      constructor(props, context) {
+        super(props, context);
+
+        this.state = {
+          errors: {},
+          user: {
+            email: '',
+            name: '',
+            password: ''
+          }
+        };
+
+        this.processForm = this.processForm.bind(this);
+        this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+        import SignUpForm from '../components/signUpForm.jsx';
+
+
+        class SignUpPage extends React.Component {
+          constructor(props, context) {
+            super(props, context);
+
+            this.state = {
+              errors: {},
+              user: {
+                email: '',
+                name: '',
+                password: ''
+              }
+            };
+
+            this.processForm = this.processForm.bind(this);
+            this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+            import SignUpForm from '../components/signUpForm.jsx';
+
+
+            class SignUpPage extends React.Component {
+              constructor(props, context) {
+                super(props, context);
+
+                this.state = {
+                  errors: {},
+                  user: {
+                    email: '',
+                    name: '',
+                    password: ''
+                  }
+                };
+
+                this.processForm = this.processForm.bind(this);
+                this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
+
+
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: '',
+        name: '',
+        password: ''
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
+
+
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: '',
+        name: '',
+        password: ''
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
+
+
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: '',
+        name: '',
+        password: ''
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+    import SignUpForm from '../components/signUpForm.jsx';
+
+
+    class SignUpPage extends React.Component {
+      constructor(props, context) {
+        super(props, context);
+
+        this.state = {
+          errors: {},
+          user: {
+            email: '',
+            name: '',
+            password: ''
+          }
+        };
+
+        this.processForm = this.processForm.bind(this);
+        this.changeUser = this.changeUser.bind(this);lStorage.getItem('successMessage');
     let successMessage = '';
     if (storedMessage) {
       successMessage = storedMessage;
