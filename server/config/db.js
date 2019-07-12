@@ -11,10 +11,15 @@ switch (process.env.NODE_ENV) {
     mongoose.connect(mongooseUri, options);
     break;
 
+    
   case 'test':
     mongoose.connect('localhost', 'react-node-project-seed-test');
     break;
 
+    case 'test':
+      mongoose.connect('localhost', 'react-node-project-seed-test');
+      break;
+  
   default:
     if(process.env.NODE_ENV !== 'development') {
       console.warn('Caution! Unrecognized Node environment:', process.env.NODE_ENV, 'Defaulting to development database.');
