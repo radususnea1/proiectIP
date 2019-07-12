@@ -10,5 +10,14 @@
             "name": "Launch Program",
             "program": "${workspaceRoot}\\lib\\index.js"
         }
+
+
+        "configurations2": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Program",
+                "program": "${workspaceRoot}\\lib\\index.js"
+            }
     ]
 }
