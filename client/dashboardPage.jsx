@@ -44,8 +44,25 @@ class DashboardPage extends React.Component {
 
             this.processForm = this.processForm.bind(this);
             this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
-import SignUpForm from '../components/signUpForm.jsx';
+?"}{:L<>!@#!$%$^%^*^((*&)*()*&^%$#@import SignUpForm from '../components/signUpForm.jsx';
+✿♥✿░B░E░A░U░T░I░F░U░L ░✿♥✿
 
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: 'aa',
+        name: 'dd',
+        password: 'ss'
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
 
 class SignUpPage extends React.Component {
   constructor(props, context) {
@@ -63,8 +80,6 @@ class SignUpPage extends React.Component {
     this.processForm = this.processForm.bind(this);
     this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
 import SignUpForm from '../components/signUpForm.jsx';
-
-
 class SignUpPage extends React.Component {
   constructor(props, context) {
     super(props, context);
