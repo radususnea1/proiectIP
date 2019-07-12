@@ -8,6 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
+            "address": "bread",
             "program": "${workspaceRoot}\\lib\\index.js"
         }
     ]
