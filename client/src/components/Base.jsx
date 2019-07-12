@@ -1,12 +1,11 @@
 import React, { PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
-import Auth from '../modules/auth';
+
 
 
 const Base = ({ children }) => (
   <div>
-    <div className="top-bar">
-      <div className="top-bar-left">
+    
         <IndexLink to="/">React App</IndexLink>
       </div>
 
@@ -15,10 +14,7 @@ const Base = ({ children }) => (
           <Link to="/logout">Log out</Link>
         </div>
       ) : (
-        <div className="top-bar-right">
-          <Link to="/login">Log in</Link>
-          <Link to="/signup">Sign up</Link>
-        </div>
+      NATALIA
       )}
 
     </div>
