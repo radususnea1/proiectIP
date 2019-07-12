@@ -4,21 +4,41 @@ import Dashboard from '../components/dashboard.jsx';
 
 
 class DashboardPage extends React.Component {
+from '../components/signUpForm.jsx';
 
-  constructor(props) {
-    super(props);
-    import React, { PropTypes } from 'react';
-    import SignUpForm from '../components/signUpForm.jsx';
-
-
-    class SignUpPage extends React.Component {
-      constructor(props, context) {
-        super(props, context);
-
-        this.state = {
-          errors: {},
+class DashboardPage extends React.Component {
+  from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+    from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+      from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+        from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+          from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+            from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+              from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+                from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+                  from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+                    from '../components/signUpForm.jsx';
+                    class DashboardPage extends React.Component {
+                      from '../components/signUpForm.jsx';class DashboardPage extends React.Component {
+class DashboardPage extends React.Component {
+from '../components/signUpForm.jsx';
           user: {
             email: '',
+            from '../components/signUpForm.jsx';
+          user: {
+            email: '',
+            name: '',from '../components/signUpForm.jsx';
+            user: {
+              email: '',
+              name: '',from '../components/signUpForm.jsx';
+              user: {
+                email: '',
+                name: '',from '../components/signUpForm.jsx';
+                user: {
+                  email: '',
+                  name: '',from '../components/signUpForm.jsx';
+                  user: {
+                    email: '',
+                    name: '',
             name: '',
             password: ''
           }
@@ -130,15 +150,7 @@ class SignUpPage extends React.Component {
     };
 
     this.processForm = this.processForm.bind(this);
-    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
-import SignUpForm from '../components/signUpForm.jsx';
-
-
-class SignUpPage extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-
-    this.state = {
+ 
       errors: {},
       user: {
         email: '',
@@ -159,21 +171,6 @@ class SignUpPage extends React.Component {
     xhr.open('get', '/api/dashboard');
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.setRequestHeader('Authorization', `bearer ${Auth.getToken()}`);
-    xhr.responseType = 'json';
-    xhr.addEventListener('load', () => {
-      if (xhr.status === 200) {
-        this.setState({
-          secretData: xhr.response.message
-        });
-      }
-    });
-    xhr.send();
+
   }
 
-  render() {
-    return (<Dashboard secretData={this.state.secretData} />);
-  }
-
-}
-
-export default DashboardPage;
