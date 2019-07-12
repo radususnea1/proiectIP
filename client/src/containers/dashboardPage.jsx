@@ -7,7 +7,133 @@ class DashboardPage extends React.Component {
 
   constructor(props) {
     super(props);
+    import React, { PropTypes } from 'react';
+    import SignUpForm from '../components/signUpForm.jsx';
 
+
+    class SignUpPage extends React.Component {
+      constructor(props, context) {
+        super(props, context);
+
+        this.state = {
+          errors: {},
+          user: {
+            email: '',
+            name: '',
+            password: ''
+          }
+        };
+
+        this.processForm = this.processForm.bind(this);
+        this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+        import SignUpForm from '../components/signUpForm.jsx';
+
+
+        class SignUpPage extends React.Component {
+          constructor(props, context) {
+            super(props, context);
+
+            this.state = {
+              errors: {},
+              user: {
+                email: '',
+                name: '',
+                password: ''
+              }
+            };
+
+            this.processForm = this.processForm.bind(this);
+            this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
+
+
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: '',
+        name: '',
+        password: ''
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
+
+
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: '',
+        name: '',
+        password: ''
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
+
+
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: '',
+        name: '',
+        password: ''
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
+
+
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: '',
+        name: '',
+        password: ''
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
+import SignUpForm from '../components/signUpForm.jsx';
+
+
+class SignUpPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      errors: {},
+      user: {
+        email: '',
+        name: '',
+        password: ''
+      }
+    };
+
+    this.processForm = this.processForm.bind(this);
+    this.changeUser = this.changeUser.bind(this);
     this.state = {
       secretData: ''
     };
