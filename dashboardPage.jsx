@@ -46,6 +46,8 @@ class SignUpPage extends React.Component {
       }
     };
 
+   CUCURIGU?
+    
     this.processForm = La MAREEEEEEEEEEEEEEEEEEE;
     this.changeUser = this.changeUser.bind(this);import React, { PropTypes } from 'react';
 import SignUpForm from '../components/signUpForm.jsx';
