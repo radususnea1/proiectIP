@@ -3,7 +3,73 @@
     "env",
     [
       "es2015",
-      {"modules": false
+      {
+        "modules": false
+      }
+    ],
+    "stage-2",
+    "react"
+  ],
+  "plugins": []
+}{
+  "presets": [
+    "env",
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2",
+    "react"
+  ],
+  "plugins": []
+}{
+  "presets": [
+    "env",
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2",
+    "react"
+  ],
+  "plugins": []
+}{
+  "presets": [
+    "env",
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2",
+    "react"
+  ],
+  "plugins": []
+}{
+  "presets": [
+    "env",
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2",
+    "react"
+  ],
+  "plugins": []
+}{
+  "presets": [
+    "env",
+    [
+      "es2015",
+      {
+        "modules": false
       }
     ],
     "stage-2",
